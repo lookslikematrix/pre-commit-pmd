@@ -1,0 +1,7 @@
+- id: pmd
+  name: pmd (Java static analyser)
+  description: Static analysis for Java via the PMD distribution.
+  entry: hooks/pmd/run.sh
+  language: script
+  types: [java]
+  args: ["check", "-R", "rulesets/java/quickstart.xml", "-f", "text"]

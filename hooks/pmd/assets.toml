@@ -1,0 +1,12 @@
+[upstream]
+# PMD release tags are "pmd_releases/X.Y.Z"; the API exposes them as "pmd_releases/7.7.0",
+# but GitHub `releases/latest` returns tag_name "pmd_releases/7.7.0" — strip the prefix.
+datasource = "github-releases"
+repo = "pmd/pmd"
+strip_prefix = "pmd_releases/"
+
+[release]
+url_template = "https://github.com/pmd/pmd/releases/download/pmd_releases%2F{version}/pmd-dist-{version}-bin.zip"
+name_template = "pmd-dist-{version}-bin.zip"
+
+[[release.assets]]

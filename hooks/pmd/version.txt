@@ -1,0 +1,2 @@
+# renovate: datasource=github-releases depName=pmd/pmd extractVersion=^pmd_releases/(?<version>.+)$
+7.24.0
